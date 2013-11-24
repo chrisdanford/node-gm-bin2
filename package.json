@@ -1,0 +1,43 @@
+{
+  "name": "gm-bin",
+  "version": "0.1.0",
+  "description": "gm wrapper that makes it seamlessly available as a local dependency on OS X, Linux and Windows",
+  "keywords": [
+    "gm",
+    "img",
+    "image"
+  ],
+  "homepage": "https://github.com/yuanyan/node-gm-bin",
+  "bugs": "https://github.com/yuanyan/node-gm-bin/issues",
+  "author": {
+    "name": "yuanyan",
+    "email": "yuanyan.cao@gmail.com",
+    "url": "http://madscript.com"
+  },
+  "main": "lib/gm-bin.js",
+  "bin": "bin/gm-bin",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yuanyan/node-gm-bin.git"
+  },
+  "scripts": {
+    "test": "mocha",
+    "postinstall": "node lib/check.js"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+    "bin-wrapper": "~0.1.3",
+    "chalk": "~0.2.0",
+    "lodash": "~2.3.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.13.0"
+  }
+}
